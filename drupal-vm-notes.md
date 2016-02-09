@@ -126,7 +126,7 @@ sudo ansible-galaxy install -r provisioning/requirements.yml --force
 ### Configure drupalvm:
 ```
 cp example.config.yml config.yml
-cp example.drupal.make.yml drush.make.yml
+cp example.drupal.make.yml drupal.make.yml
 ```
 
 The example config file and drush make is already set up to install Drupal 8.  Double check this is the case by opening the files in a text editor.
