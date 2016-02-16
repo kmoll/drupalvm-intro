@@ -80,6 +80,12 @@ Edit your `./bash_profile` file and add
 $ export PATH="$HOME/.composer/vendor/bin:$PATH"
 ```
 
+Once you update your `bash_profile` file you need to tell your system to use the updated file.  
+This can be done by "sourcing" the bash profile:
+```
+source ~/.bash_profile
+```
+
 Now you can install drush via composer:
 ``` 
 composer global require drush/drush:dev-master
@@ -94,7 +100,8 @@ composer global update
 Here's a good reference to the difference between using composer install vs. composer update:  
 https://adamcod.es/2013/03/07/composer-install-vs-composer-update.html
 
-_current version: **8.0-dev**_
+_current version (drush): **8.0-dev**_
+_current version (composer): **1.0-dev**_
 
 ## Setting up your host
 
