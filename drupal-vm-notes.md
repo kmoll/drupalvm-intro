@@ -130,6 +130,11 @@ Clone DrupalVM from the git repo
 git clone https://github.com/geerlingguy/drupal-vm.git
 ```
 
+This will create a `drupal-vm` folder in the current directory.  Navigate into the `drupal-vm` folder   
+```
+cd drupal-vm
+```
+
 Install needed ansible roles form anisble galaxy
 ```
 sudo ansible-galaxy install -r provisioning/requirements.yml --force
