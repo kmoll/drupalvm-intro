@@ -14,7 +14,7 @@ __* The instructions here are based on using a Mac Host operating system.__
 
 I've also create some screencasts that walk through the steps below:
 
-Part 1: https://www.youtube.com/watch?v=6_d_sbkf-28
+Part 1: https://www.youtube.com/watch?v=6_d_sbkf-28   
 Part 2: https://www.youtube.com/watch?v=wROpmBVpeAo
 
 ## Install Dependencies
