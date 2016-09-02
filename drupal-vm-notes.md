@@ -12,6 +12,10 @@ more information if needed.
 
 __* The instructions here are based on using a Mac Host operating system.__
 
+__* The instructions are also based on 2.x version of DrupalVM.  3.x has been recently
+release and some things have changed.  Please see updated on line documentation of something in
+this document conflict what 3.x version.  Most steps still apply__
+
 I've also create some screencasts that walk through the steps below:
 
 Part 1: https://www.youtube.com/watch?v=6_d_sbkf-28   
@@ -57,6 +61,8 @@ Install [Xcode](https://developer.apple.com/xcode/)
 sudo easy_install pip
 sudo pip install ansible --quiet
 ```
+
+__** If you get the error: `VersionConflict: (setuptools 1.1.6 (/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python), Requirement.parse('setuptools>=11.3’))`  you can fix that with: `pip install --upgrade setuptools --user python`__
 
 ##### Using homebrew:
 ```
@@ -135,7 +141,7 @@ This will create a `drupal-vm` folder in the current directory.  Navigate into t
 cd drupal-vm
 ```
 
-Install needed ansible roles form anisble galaxy
+Install needed ansible roles from anisble galaxy
 ```
 sudo ansible-galaxy install -r provisioning/requirements.yml --force
 ```
@@ -145,6 +151,7 @@ sudo ansible-galaxy install -r provisioning/requirements.yml --force
 cp example.config.yml config.yml
 cp example.drupal.make.yml drupal.make.yml
 ```
+__** Note that for 3.x version example.config.yml has been re-named to default.config.yml.  You will need to copy this file to config.yml.__
 
 The example config file and drush make is already set up to install Drupal 8.  Double check this is the case by opening the files in a text editor.
 
